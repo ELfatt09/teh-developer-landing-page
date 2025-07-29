@@ -6,15 +6,15 @@ function Navbar() {
     <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg sticky top-0 flex flex-col z-20">
       <div className="container mx-auto flex w-full justify-between ">
         <div className="flex items-center justify-center py-2">
-            <a href="#" className="text-3xl font-bold text-primary">
+            <a href="#beranda" className="text-3xl font-bold text-primary">
                 <img src="./assets/images/Banner.svg" alt="Logo" className="h-15" />
           </a>
         </div>
         <div className="w-4/5 hidden md:flex items-center  justify-center ">
-          <DesktopNavButton href="#">Beranda</DesktopNavButton>
-          <DesktopNavButton href="#">Layanan</DesktopNavButton>
-          <DesktopNavButton href="#">Tentang Kami</DesktopNavButton>
-          <DesktopNavButton href="#">Kontak</DesktopNavButton>
+          <DesktopNavButton href="#beranda">Beranda</DesktopNavButton>
+          <DesktopNavButton href="#layanan">Layanan</DesktopNavButton>
+          <DesktopNavButton href="#tentang">Tentang Kami</DesktopNavButton>
+          <DesktopNavButton href="#kontak">Kontak</DesktopNavButton>
         </div>
         <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
           <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
@@ -27,10 +27,10 @@ function Navbar() {
           </div>
           {openMobileMenu && (
             <div className="md:hidden w-full bg-white shadow-lg">
-              <MobileNavButton href="#">Beranda</MobileNavButton>
-              <MobileNavButton href="#">Layanan</MobileNavButton>
-              <MobileNavButton href="#">Tentang Kami</MobileNavButton>
-              <MobileNavButton href="#">Kontak</MobileNavButton>
+              <MobileNavButton href="#beranda">Beranda</MobileNavButton>
+              <MobileNavButton href="#layanan">Layanan</MobileNavButton>
+              <MobileNavButton href="#tentang">Tentang Kami</MobileNavButton>
+              <MobileNavButton href="#kontak">Kontak</MobileNavButton>
             </div>
           )}
     </nav>
@@ -54,3 +54,4 @@ function MobileNavButton(props) {
 
 
 export default Navbar
+

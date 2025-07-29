@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Hero from './sections/hero';
 import Navbar from './sections/navbar';
 import Advantages from './sections/advantages';

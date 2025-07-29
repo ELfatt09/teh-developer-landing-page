@@ -16,7 +16,7 @@ function Hero() {
         <p className='px-5 text-text text-md md:text-lg w-full  max-w-2xl mx-auto'>
           Dapatkan website profesional, Aplikasi web dan bantuan IT untuk usaha Anda tanpa perlu coding atau desain rumit. Mudah, cepat, dan terjangkau.
         </p>
-        <a href='#' className='transition duration-300 bg-primary shadow-primary text-background hover:bg-transparent hover:scale-105 hover:text-primary hover:shadow-xl px-5 py-2 mt-6 text-xl font-jakarta font-medium tracking-tight'>
+        <a href='#kontak' className='transition duration-300 bg-primary shadow-primary text-background hover:bg-transparent hover:scale-105 hover:text-primary hover:shadow-xl px-5 py-2 mt-6 text-xl font-jakarta font-medium tracking-tight'>
           Kontak Kami
         </a>
         <div className='mt-25 h-60 overflow-hidden w-full mb-10'>
