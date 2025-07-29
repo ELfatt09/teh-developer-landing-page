@@ -2,7 +2,7 @@ import React from 'react';
 
 const AdvantageItem = ({ number, title, imgSrc, description }) => (
   <div className='transition duration-300 w-full max-w-md p-8 bg-white hover:bg-white/0 hover:shadow-none rounded-2xl shadow-lg flex flex-col items-center justify-center mt-10 text-background'>
-    <div className='flex items-center justify-center w-15 h-15 rounded-full bg-primary text-background text-3xl font-jakarta'>
+    <div className='flex items-center justify-center w-15 h-15 bg-primary text-background text-3xl font-jakarta'>
       {number}
     </div>
     <h3 className='text-2xl font-jakarta text-text mt-5 text-center'>{title}</h3>
