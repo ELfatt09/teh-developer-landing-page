@@ -2,7 +2,7 @@ import Hero from './sections/hero';
 import Navbar from './sections/navbar';
 import Advantages from './sections/advantages';
 import Services from './sections/services';
-import './App.css';
+import './output.css';
 
 function App() {
   return (
