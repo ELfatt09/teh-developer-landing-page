@@ -39,14 +39,14 @@ function Navbar() {
 
 function DesktopNavButton(props) {
     return (
-        <a href={props.href} className="flex justify-center items-center h-full transition duration-500 w-full text-lg font-jakarta text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
+        <a href={props.href} className="flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
 
     )
 }
 
 function MobileNavButton(props) {
     return (
-        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-jakarta text-primary focus:text-background focus:bg-primary">
+        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-sans text-primary focus:text-background focus:bg-primary">
             {props.children}
         </a>
     );

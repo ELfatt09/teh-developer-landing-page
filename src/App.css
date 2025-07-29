@@ -6,6 +6,7 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-white: #fff;
@@ -48,7 +49,7 @@
     --color-text: #333333;
     --color-primary: #302815;
     --color-secondary: #cbcbcb;
-    --font-jakarta: 'Plus Jakarta Sans', cursive;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
   }
 }
 @layer base {
@@ -508,6 +509,12 @@
   }
   .font-jakarta {
     font-family: var(--font-jakarta);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
   }
   .text-2xl {
     font-size: var(--text-2xl);

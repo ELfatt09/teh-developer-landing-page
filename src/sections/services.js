@@ -5,7 +5,7 @@ function Services() {
   return (
     <section className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
           <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
-            <h2 className='text-4xl md:text-5xl mt-10 font-jakarta leading-relaxed text-center  tracking-tighter'>
+            <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
               <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5'></div>
@@ -51,14 +51,14 @@ function Service(props) {
             className={`transition duration-500 w-full h-min-20 h-full py-5 border-b border-text/40 ${hover ? 'bg-secondary/70' : 'hover:bg-secondary/70'} flex flex-col justify-center items-center group`}>
             <div className="w-full max-w-4xl flex flex-row justify-between items-center h-full">
               <div className="w-auto pr-3 md:w-1/3 h-full pl-5 ">
-                    <span className="text-3xl font-jakarta text-primary inline-block">{props.number}</span>
+                    <span className="text-3xl font-sans text-primary inline-block">{props.number}</span>
               </div>
               <div className="w-full h-full flex flex-col pr-5">
                 <div className="w-full flex flex-col sm:flex-row justify-between gap-3 items-center">
-                        <h3 className="text-3xl w-full sm:w-2/3 font-jakarta text-text inline-block tracking-tighter">{ props.title}</h3>
-                  <span className="text-xl font-jakarta w-full sm:w-1/3 text-primary inline-block tracking-tighter">Rp. {props.price}</span>
+                        <h3 className="text-3xl w-full sm:w-2/3 font-sans text-text inline-block tracking-tighter">{ props.title}</h3>
+                  <span className="text-xl font-sans w-full sm:w-1/3 text-primary inline-block tracking-tighter">Rp. {props.price}</span>
                 </div>
-                <p className="text-text/70 text-sm md:text-md inline-block mt-5 font-jakarta">{props.description}</p>
+                <p className="text-text/70 text-sm md:text-md inline-block mt-5 font-sans">{props.description}</p>
 <motion.ul
         layout            // ← enable layout animations
         initial={{ opacity: 0, height: 0 }}
