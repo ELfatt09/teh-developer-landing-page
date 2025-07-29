@@ -1,0 +1,56 @@
+import { useState } from 'react'
+
+function Navbar() {
+    const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  return (
+    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg sticky top-0 flex flex-col z-20">
+      <div className="container mx-auto flex w-full justify-between ">
+        <div className="flex items-center justify-center py-2">
+            <a href="#" className="text-3xl font-bold text-primary">
+                <img src="./assets/images/Banner.svg" alt="Logo" className="h-15" />
+          </a>
+        </div>
+        <div className="w-4/5 hidden md:flex items-center  justify-center ">
+          <DesktopNavButton href="#">Beranda</DesktopNavButton>
+          <DesktopNavButton href="#">Layanan</DesktopNavButton>
+          <DesktopNavButton href="#">Tentang Kami</DesktopNavButton>
+          <DesktopNavButton href="#">Kontak</DesktopNavButton>
+        </div>
+        <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
+          <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+            <svg className="h-8 fill-current" viewBox="0 0 24 24">
+              <path d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z" />
+            </svg>
+          </button>
+        </div>
+                        
+          </div>
+          {openMobileMenu && (
+            <div className="md:hidden w-full bg-white shadow-lg">
+              <MobileNavButton href="#">Beranda</MobileNavButton>
+              <MobileNavButton href="#">Layanan</MobileNavButton>
+              <MobileNavButton href="#">Tentang Kami</MobileNavButton>
+              <MobileNavButton href="#">Kontak</MobileNavButton>
+            </div>
+          )}
+    </nav>
+  )
+}
+
+function DesktopNavButton(props) {
+    return (
+        <a href={props.href} className="flex justify-center items-center h-full transition duration-500 w-full text-lg font-jakarta text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
+
+    )
+}
+
+function MobileNavButton(props) {
+    return (
+        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-jakarta text-primary focus:text-background focus:bg-primary">
+            {props.children}
+        </a>
+    );
+}
+
+
+export default Navbar
