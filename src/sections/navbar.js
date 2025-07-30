@@ -3,8 +3,8 @@ import { useState } from 'react'
 function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
-    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg sticky top-0 flex flex-col z-20">
-      <div className="container mx-auto flex w-full justify-between ">
+    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg fixed w-full top-0 flex flex-col z-20">
+      <div className="container mx-auto flex w-full justify-between">
         <div className="flex items-center justify-center py-2">
             <a href="#beranda" className="text-3xl font-bold text-primary">
                 <img src="./assets/images/Banner.svg" alt="Logo" className="h-14" />

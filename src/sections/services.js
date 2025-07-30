@@ -5,7 +5,7 @@ function Services() {
   return (
     <section className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
           <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
-            <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter'>
+            <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
               <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5'></div>
@@ -55,21 +55,20 @@ function Service(props) {
               </div>
               <div className="w-full h-full flex flex-col pr-5">
                 <div className="w-full flex flex-col sm:flex-row justify-between gap-3 items-center">
-                        <h3 className="text-3xl w-full sm:w-2/3 font-sans text-text inline-block tracking-tighter">{ props.title}</h3>
+                        <h3 className="font text-3xl w-full sm:w-2/3 font-sans font-normal text-text inline-block tracking-tighter">{ props.title}</h3>
                   <span className="text-xl font-sans w-full sm:w-1/3 text-primary inline-block tracking-tighter">Rp. {props.price}</span>
                 </div>
                 <p className="text-text/70 text-sm md:text-md inline-block mt-5 font-sans">{props.description}</p>
 <motion.ul
         layout            // ← enable layout animations
         initial={{ opacity: 0, height: 0 }}
-        animate={hover ? { opacity: 1, height: 'auto' } : { opacity: 0, height: 0 }}
+        animate={hover ? { opacity: 1, height: 'auto' } : { opacity: 0, height: '0px' }}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
         style={{ overflow: 'hidden' }}
         className="flex flex-wrap w-full whitespace-nowrap mt-7"
       >
         {props.list.map((item, i) => (
           <li key={i} className="w-full text-text text-sm whitespace-break-spaces mt-1">
-            <span className="font-medium">{i+1}. </span>
             {item}
           </li>
         ))}

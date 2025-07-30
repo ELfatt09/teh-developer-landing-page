@@ -5,18 +5,21 @@ module.exports = {
   ],
   plugins: [],
   corePlugins: {
-    preflight: false,
+    preflight: true,
   },
   theme: {
-    fontFamily: {
-      sans: ['Plus Jakarta Sans', 'sans-serif'],
-    },
+    extend: {
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+      },
       colors: {
         background: '#EDEDED',
         text: '#333333',
         primary: '#302815',
         secondary: '#cbcbcb',
         accent: '#6c3a10',
+      
       },
     },
   }
+}
