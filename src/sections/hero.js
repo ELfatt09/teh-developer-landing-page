@@ -7,19 +7,19 @@ function Hero() {
   return (
     <section className='w-full min-h-screen flex flex-col items-center justify-center bg-background text-text'>
       <div className='w-full max-w-5xl flex items-center justify-between px-8'>
-        <h1 className='text-5xl md:text-7xl mt-10 font-sans leading-relaxed tracking-tighter text-center'>
+        <h1 className='text-5xl md:text-7xl mt-10 font-sans leading-relaxed  md:leading-loose tracking-tighter text-center'>
           Punya Website Usaha Sekarang Semudah <span className='text-background bg-primary px-5 font-semibold'>Nge-Teh</span>.
         </h1>
       </div>
 
-      <div className='w-full text-center mt-15 flex flex-col items-center'>
+      <div className='w-full text-center flex flex-col items-center'>
         <p className='px-5 text-text text-md md:text-lg w-full  max-w-2xl mx-auto'>
           Dapatkan website profesional, Aplikasi web dan bantuan IT untuk usaha Anda tanpa perlu coding atau desain rumit. Mudah, cepat, dan terjangkau.
         </p>
-        <a href='#kontak' className='transition duration-300 bg-primary shadow-primary text-background hover:bg-transparent hover:scale-105 hover:text-primary hover:shadow-xl px-5 py-2 mt-6 text-xl font-sans font-medium tracking-tight'>
+        <a href='#kontak' className='transition duration-300 bg-primary shadow-primary text-background hover:bg-secondary/50 hover:scale-105 hover:text-primary hover:shadow-xl px-5 py-2 mt-6 text-xl font-sans font-medium tracking-tight'>
           Kontak Kami
         </a>
-        <div className='mt-25 h-60 overflow-hidden w-full mb-10'>
+        <div className='mt-24 h-60 overflow-hidden w-full mb-10'>
           <Marquee images={pics} duration={20} />
         </div>
       </div>

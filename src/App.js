@@ -6,7 +6,7 @@ import Services from './sections/services';
 function App() {
   return (
     <>
-    <div className="App bg-background p-0" >
+    <div className="App bg-background font-sans" >
       <Navbar />
       <Hero />
       <Services />

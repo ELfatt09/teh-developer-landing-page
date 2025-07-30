@@ -7,7 +7,7 @@ function Navbar() {
       <div className="container mx-auto flex w-full justify-between ">
         <div className="flex items-center justify-center py-2">
             <a href="#beranda" className="text-3xl font-bold text-primary">
-                <img src="./assets/images/Banner.svg" alt="Logo" className="h-15" />
+                <img src="./assets/images/Banner.svg" alt="Logo" className="h-14" />
           </a>
         </div>
         <div className="w-4/5 hidden md:flex items-center  justify-center ">
@@ -26,7 +26,7 @@ function Navbar() {
                         
           </div>
           {openMobileMenu && (
-            <div className="md:hidden w-full bg-white shadow-lg">
+            <div className="md:hidden w-full bg-white shadow-lg ">
               <MobileNavButton href="#beranda">Beranda</MobileNavButton>
               <MobileNavButton href="#layanan">Layanan</MobileNavButton>
               <MobileNavButton href="#tentang">Tentang Kami</MobileNavButton>
@@ -39,7 +39,7 @@ function Navbar() {
 
 function DesktopNavButton(props) {
     return (
-        <a href={props.href} className="flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
+        <a href={props.href} className="no-underline flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
 
     )
 }
