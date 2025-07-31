@@ -20,7 +20,7 @@ function Hero() {
     <section id='beranda' className='mt-20 w-full min-h-screen flex flex-col items-center justify-center bg-background text-text' aria-label='hero'>
       <div className='w-full max-w-5xl flex items-center justify-between px-8'>
         <h1 className='text-5xl md:text-6xl mt-10 font-sans font-medium leading-relaxed  md:leading-loose tracking-tighter text-center'>
-          Punya Website Usaha Sekarang Semudah <span className='text-background bg-primary px-5 font-semibold'>Nge-Teh</span>.
+          Punya Website dan Aplikasi Sekarang Semudah <span className='text-background bg-primary px-5 font-semibold'>Nge-Teh</span>.
         </h1>
       </div>
 

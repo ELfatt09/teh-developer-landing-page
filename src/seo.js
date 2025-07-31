@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 function Seo() {
   return (
       <Helmet>
-           <title>Punya Website Usaha Semudah Nge-Teh | Teh Developer</title>
+           <title>Punya Website dan Aplikasi Semudah Nge-Teh | Teh Developer</title>
   <meta
     name="description"
     content="Dapatkan website profesional & aplikasi web tanpa ribet. Cepat, terjangkau, support penuh buat UMKM, café, minimarket, apotek, dan toko kecil."
@@ -14,13 +14,13 @@ function Seo() {
           
            <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tehdeveloper.com/" />
-  <meta property="og:title" content="Punya Website Usaha Semudah Nge-Teh | Teh Developer" />
+  <meta property="og:title" content="Punya Website dan Aplikasi Semudah Nge-Teh | Teh Developer" />
   <meta property="og:description" content="Dapatkan website profesional & aplikasi web tanpa ribet. Cepat, terjangkau, support penuh buat UMKM & toko kecil." />
   <meta property="og:image" content="https://tehdeveloper.com/og-image.png" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Punya Website Usaha Semudah Nge-Teh | Teh Developer" />
+  <meta name="twitter:title" content="Punya Website dan Aplikasi Usaha Semudah Nge-Teh | Teh Developer" />
   <meta name="twitter:description" content="Dapatkan website & aplikasi web tanpa ribet, ready support penuh buat UMKM." />
           <meta name="twitter:image" content="https://tehdeveloper.com/twitter-image.png" />
           
