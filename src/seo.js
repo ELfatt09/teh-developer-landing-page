@@ -11,7 +11,6 @@ function Seo() {
   />
   <link rel="canonical" href="https://tehdeveloper.com/" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="google-site-verification" content="3_xlx2SJLCOWbUlveL_X7se4q4OTMgyaVadCoZzMxts" />
           
            <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tehdeveloper.com/" />
@@ -73,6 +72,7 @@ function Seo() {
       }
     `}
   </script>
+  <meta name="google-site-verification" content="3_xlx2SJLCOWbUlveL_X7se4q4OTMgyaVadCoZzMxts" />
     </Helmet>
   )
 }
