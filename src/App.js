@@ -3,6 +3,7 @@ import Navbar from './sections/navbar';
 import Advantages from './sections/advantages';
 import Services from './sections/services';
 import Contact from './sections/contact';
+import Footer from './sections/footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <Advantages />
       <Contact />
+      <Footer />
       </div>
   );
 }

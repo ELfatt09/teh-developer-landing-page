@@ -39,7 +39,7 @@ function Advantages() {
   ];
 
   return (
-    <section className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
+    <section id='keunggulan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
       <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
         <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed tracking-tighter text-center font-medium'>
           Keunggulan <span className='bg-primary text-background px-3 font-semibold'>kami</span>

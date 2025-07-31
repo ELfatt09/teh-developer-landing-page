@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 
 function Services() {
   return (
-    <section className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
+    <section id='layanan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
           <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
             <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
@@ -18,7 +18,7 @@ function Services() {
                   list={[ 
                 "Desain modern dan profesional yang sesuai dengan identitas brand Anda",
                 "Optimasi SEO untuk meningkatkan peringkat di mesin pencari",
-                "Gratis Revisi minor 2x dan major 1x",
+                "Gratis Revisi kecil 2x dan besar 1x",
                 "Bantuan pendaftaran Hosting dan Domain",
                 "Bantuan Deployment",
                   ]} />
@@ -30,7 +30,7 @@ function Services() {
                     "Dibangun dengan Laravel — framework PHP modern dan powerful",
                     "Struktur kode rapi, mudah dikembangkan & dipelihara",
                     "Sistem autentikasi aman (login, register, role management, dsb)",
-                    "Gratis Revisi minor 2x dan major 1x",
+                    "Gratis Revisi kecil 2x dan besar 1x",
                     "Bantuan deployment ke server & setup hosting",
                     "Dokumentasi penggunaan dan struktur database",
                     "Bisa request fitur khusus sesuai kebutuhan",

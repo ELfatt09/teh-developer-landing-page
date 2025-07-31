@@ -13,7 +13,7 @@ function Navbar() {
         <div className="w-4/5 hidden md:flex items-center  justify-center ">
           <DesktopNavButton href="#beranda">Beranda</DesktopNavButton>
           <DesktopNavButton href="#layanan">Layanan</DesktopNavButton>
-          <DesktopNavButton href="#tentang">Tentang Kami</DesktopNavButton>
+          <DesktopNavButton href="#keunggulan">Keunggulan</DesktopNavButton>
           <DesktopNavButton href="#kontak">Kontak</DesktopNavButton>
         </div>
         <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
@@ -29,7 +29,7 @@ function Navbar() {
             <div className="md:hidden w-full bg-white shadow-lg ">
               <MobileNavButton href="#beranda">Beranda</MobileNavButton>
               <MobileNavButton href="#layanan">Layanan</MobileNavButton>
-              <MobileNavButton href="#tentang">Tentang Kami</MobileNavButton>
+              <MobileNavButton href="#keunggulan">Keunggulan</MobileNavButton>
               <MobileNavButton href="#kontak">Kontak</MobileNavButton>
             </div>
           )}
@@ -46,7 +46,7 @@ function DesktopNavButton(props) {
 
 function MobileNavButton(props) {
     return (
-        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-sans text-primary focus:text-background focus:bg-primary">
+        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-sans text-primary focus:text-background focus:bg-primary no-underline transition duration-500 hover:text-background hover:bg-primary hover:font-semibold">
             {props.children}
         </a>
     );
