@@ -71,7 +71,7 @@ function Service(props) {
         role='list'
       >
         {props.list.map((item, i) => (
-          <li key={i} className="w-full text-text text-sm whitespace-break-spaces mt-1" role='listitem'>
+          <li key={i} className="w-full text-text text-sm whitespace-break-spaces mt-1">
             {item}
           </li>
         ))}
