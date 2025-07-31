@@ -72,7 +72,6 @@ function Seo() {
       }
     `}
   </script>
-  <meta name="google-site-verification" content="3_xlx2SJLCOWbUlveL_X7se4q4OTMgyaVadCoZzMxts" />
     </Helmet>
   )
 }
