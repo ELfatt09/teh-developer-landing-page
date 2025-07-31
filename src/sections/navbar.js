@@ -3,30 +3,30 @@ import { useState } from 'react'
 function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
-    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg fixed w-full top-0 flex flex-col z-20">
+    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg fixed w-full top-0 flex flex-col z-20" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto flex w-full justify-between">
         <div className="flex items-center justify-center py-2">
-            <a href="#beranda" className="text-3xl font-bold text-primary">
+            <a href="#beranda" className="text-3xl font-bold text-primary" aria-label="Logo" tabIndex={-1}>
                 <img src="./assets/images/Banner.svg" alt="Logo" className="h-14" />
           </a>
         </div>
-        <div className="w-4/5 hidden md:flex items-center  justify-center ">
+        <div className="w-4/5 hidden md:flex items-center  justify-center " role="menubar">
           <DesktopNavButton href="#beranda">Beranda</DesktopNavButton>
           <DesktopNavButton href="#layanan">Layanan</DesktopNavButton>
           <DesktopNavButton href="#keunggulan">Keunggulan</DesktopNavButton>
           <DesktopNavButton href="#kontak">Kontak</DesktopNavButton>
         </div>
         <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
-          <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+          <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Toggle menu" tabIndex={0}>
             <svg className="h-8 fill-current" viewBox="0 0 24 24">
-              <path d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z" />
+              <path d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 110-2z" />
             </svg>
           </button>
         </div>
                         
           </div>
           {openMobileMenu && (
-            <div className="md:hidden w-full bg-white shadow-lg ">
+            <div className="md:hidden w-full bg-white shadow-lg " role="menu">
               <MobileNavButton href="#beranda">Beranda</MobileNavButton>
               <MobileNavButton href="#layanan">Layanan</MobileNavButton>
               <MobileNavButton href="#keunggulan">Keunggulan</MobileNavButton>
@@ -39,14 +39,14 @@ function Navbar() {
 
 function DesktopNavButton(props) {
     return (
-        <a href={props.href} className="no-underline flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold">{props.children}</a>
+        <a href={props.href} className="no-underline flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold" role="menuitem" tabIndex={-1}>{props.children}</a>
 
     )
 }
 
 function MobileNavButton(props) {
     return (
-        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-sans text-primary focus:text-background focus:bg-primary no-underline transition duration-500 hover:text-background hover:bg-primary hover:font-semibold">
+        <a href={props.href} className="flex justify-center items-center w-full py-3 text-lg font-sans text-primary focus:text-background focus:bg-primary no-underline transition duration-500 hover:text-background hover:bg-primary hover:font-semibold" role="menuitem" tabIndex={-1}>
             {props.children}
         </a>
     );

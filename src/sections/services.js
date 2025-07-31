@@ -3,14 +3,14 @@ import { motion } from 'motion/react'
 
 function Services() {
   return (
-    <section id='layanan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
-          <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
-            <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
+    <section id='layanan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20' aria-labelledby='services-heading'>
+          <header className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
+            <h2 id='services-heading' className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
-              <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5'></div>
-          </div>
-          <div className='w-full flex flex-col items-center justify-center mt-10'>
+              <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5' aria-hidden='true'></div>
+          </header>
+          <div className='w-full flex flex-col items-center justify-center mt-10' role='list'>
               <Service number="01"
                   title="Pembuatan Landing Page"
                   price="350.000+"
@@ -44,11 +44,13 @@ function Service(props) {
     const [hover, setHover] = useState(false);
 
     return (
-      <motion.div
+      <motion.li
             onClick={() => setHover(!hover)}
             onHoverStart={() => setHover(true)}
             onHoverEnd={() => setHover(false)}
-            className={`transition duration-500 w-full h-min-20 h-full py-5 border-b border-text/40 ${hover ? 'bg-secondary/70' : 'hover:bg-secondary/70'} flex flex-col justify-center items-center group`}>
+            className={`transition duration-500 w-full h-min-20 h-full py-5 border-b border-text/40 ${hover ? 'bg-secondary/70' : 'hover:bg-secondary/70'} flex flex-col justify-center items-center group`}
+            role='listitem'
+            aria-label={props.title}>
             <div className="w-full max-w-4xl flex flex-row justify-between items-center h-full">
               <div className="w-auto pr-3 md:w-1/3 h-full pl-5 ">
                     <span className="text-3xl font-sans text-primary inline-block">{props.number}</span>
@@ -66,16 +68,17 @@ function Service(props) {
         transition={{ duration: 0.5, ease: 'easeInOut' }}
         style={{ overflow: 'hidden' }}
         className="flex flex-wrap w-full whitespace-nowrap mt-7"
+        role='list'
       >
         {props.list.map((item, i) => (
-          <li key={i} className="w-full text-text text-sm whitespace-break-spaces mt-1">
+          <li key={i} className="w-full text-text text-sm whitespace-break-spaces mt-1" role='listitem'>
             {item}
           </li>
         ))}
       </motion.ul>
               </div>
             </div>
-        </motion.div>
+        </motion.li>
     );
 }
 

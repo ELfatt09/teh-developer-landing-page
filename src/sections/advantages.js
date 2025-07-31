@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AdvantageItem = ({ number, title, imgSrc, description }) => (
   <div className='transition duration-300 w-full max-w-sm p-8 bg-white hover:bg-white/0 hover:shadow-none rounded-2xl shadow-lg flex flex-col items-center justify-center mt-10 text-background'>
     <div className='flex items-center justify-center w-16 h-16 bg-primary text-background text-3xl font-sans rounded-full'>
@@ -34,16 +32,16 @@ function Advantages() {
       title: 'Dukungan Penuh',
       imgSrc: './assets/images/dukungan.svg',
       description:
-              'Support responsif via chat atau email selama dan setelah project berjalan, sehingga Anda dapat fokus kepada bisnis Anda tanpa perlu khawatirkan website Anda.',
+        'Support responsif via chat atau email selama dan setelah project berjalan, sehingga Anda dapat fokus kepada bisnis Anda tanpa perlu khawatirkan website Anda.',
     },
   ];
 
   return (
     <section id='keunggulan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
       <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
-        <h2 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed tracking-tighter text-center font-medium'>
+        <h1 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed tracking-tighter text-center font-medium'>
           Keunggulan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
-        </h2>
+        </h1>
         <div className='transition duration-1000 bg-text w-3 md:bg-text/0 group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5'></div>
       </div>
       <div className='w-full flex flex-wrap items-center justify-center mt-10 gap-5 px-10'>
