@@ -1,20 +1,21 @@
 import { useState } from 'react'
+import { motion } from 'motion/react'
 
 function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
-    <nav className="bg-background bg-opacity-60 backdrop-blur shadow-lg fixed w-full top-0 flex flex-col z-20" role="navigation" aria-label="Main navigation">
+    <nav className="bg-background shadow-lg fixed w-full top-0 flex flex-col z-20" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto flex w-full justify-between">
-        <div className="flex items-center justify-center py-2">
+        <div className="flex items-center justify-between py-2">
             <a href="#beranda" className="text-3xl font-bold text-primary" aria-label="Logo" tabIndex={-1}>
                 <img src="./assets/images/Banner.svg" alt="Logo" className="h-14" />
           </a>
         </div>
-        <div className="w-4/5 hidden md:flex items-center  justify-center " role="menubar">
+        <div className="w-4/5 hidden md:flex items-center  justify-end mr-4 " role="menubar">
           <DesktopNavButton href="#beranda">Beranda</DesktopNavButton>
           <DesktopNavButton href="#layanan">Layanan</DesktopNavButton>
           <DesktopNavButton href="#keunggulan">Keunggulan</DesktopNavButton>
-          <DesktopNavButton href="#kontak">Kontak</DesktopNavButton>
+          <a href="#kontak" className="no-underline transition duration-500 bg-transparent text-primary hover:bg-primary hover:scale-105 border-2 border-primary hover:text-background px-5 py-2 text-md font-sans font-bold uppercase">kontak kami</a>
         </div>
         <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
           <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Toggle menu" tabIndex={0}>
@@ -38,9 +39,20 @@ function Navbar() {
 }
 
 function DesktopNavButton(props) {
+    const [hovered, setHovered] = useState(false);
     return (
-        <a href={props.href} className="no-underline flex justify-center items-center h-full transition duration-500 w-full text-lg font-sans text-primary hover:text-background hover:bg-primary hover:font-semibold" role="menuitem" tabIndex={-1}>{props.children}</a>
-
+      <motion.div
+        onHoverStart={() => setHovered(true)}
+        onHoverEnd={() => setHovered(false)}
+        className=" px-5 group flex flex-col justify-center items-start h-full transition duration-500">
+        <a href={props.href} className="px-3 w-full text-center no-underline text-lg font-san font-semibold text-text" role="menuitem" tabIndex={-1}>{props.children}</a>
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: hovered ? "100%" : 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="bg-primary rounded-xl h-0.5 w-1/2"
+        />
+      </motion.div>
     )
 }
 

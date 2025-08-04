@@ -8,7 +8,7 @@ function Services() {
             <h2 id='services-heading' className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
-              <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5' aria-hidden='true'></div>
+              <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5 mt-3' aria-hidden='true'></div>
           </header>
           <div className='w-full flex flex-col items-center justify-center mt-10' role='list'>
               <Service number="01"
