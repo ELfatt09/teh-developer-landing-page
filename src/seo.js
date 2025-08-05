@@ -37,7 +37,7 @@ function Seo() {
           "name": "Teh Developer",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://tehdeveloper.com/logo.png"
+            "url": "https://tehdeveloper.com/favicon.ico"
           }
         },
         "faqPage": {

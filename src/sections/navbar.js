@@ -15,7 +15,7 @@ function Navbar() {
           <DesktopNavButton href="#beranda">Beranda</DesktopNavButton>
           <DesktopNavButton href="#layanan">Layanan</DesktopNavButton>
           <DesktopNavButton href="#keunggulan">Keunggulan</DesktopNavButton>
-          <a href="#kontak" className="no-underline transition duration-500 bg-transparent text-primary hover:bg-primary hover:scale-105 border-2 border-primary hover:text-background px-5 py-2 text-md font-sans font-bold uppercase">kontak kami</a>
+          <a href="#kontak" className="no-underline transition duration-500 bg-transparent text-primary hover:bg-primary hover:scale-105 border-2 border-primary hover:text-background px-3 lg:px-5 py-2 text-sm lg:text-base font-sans font-bold uppercase">kontak kami</a>
         </div>
         <div className="md:hidden h-20 flex items-center justify-end w-2/5 px-3">
           <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-primary hover:text-background hover:bg-primary p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Toggle menu" tabIndex={0}>
@@ -45,7 +45,7 @@ function DesktopNavButton(props) {
         onHoverStart={() => setHovered(true)}
         onHoverEnd={() => setHovered(false)}
         className=" px-5 group flex flex-col justify-center items-start h-full transition duration-500">
-        <a href={props.href} className="px-3 w-full text-center no-underline text-lg font-san font-semibold text-text" role="menuitem" tabIndex={-1}>{props.children}</a>
+        <a href={props.href} className="px-3 w-full text-center no-underline text-base lg:text-lg  font-san font-semibold text-text" role="menuitem" tabIndex={-1}>{props.children}</a>
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: hovered ? "100%" : 0 }}
