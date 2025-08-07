@@ -17,7 +17,6 @@ function Hero() {
   "./assets/images/project/twiaah-desktop.webp"
   ];
   
-  const constraintsRef = useRef(null);
 
   return (
     <motion.section
@@ -25,7 +24,7 @@ function Hero() {
       <motion.div
         className='w-full max-w-5xl flex items-center justify-between px-8'>
         <motion.h1
-          className='text-4xl md:text-6xl mt-10 font-sans font-medium leading-normal md:leading-loose tracking-tighter space-x-2 text-center'>
+          className='text-4xl md:text-6xl mt-10 font-sans flex flex-wrap justify-center font-medium  md:leading-loose tracking-tighter space-x-2 text-center'>
           {['Punya ', 'Website ', 'dan ', 'Aplikasi ', 'Sekarang ', 'Semudah '].map((word, index) => (
             <motion.span
               key={index}
@@ -33,7 +32,7 @@ function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.5 }}
               viewport={{ once: true }}
-              className='inline-block mr-2'>
+              className=' mr-2'>
               {word}
             </motion.span>
           ))}
@@ -42,7 +41,7 @@ function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4, duration: 0.5 }}
             viewport={{ once: true }}
-            className='text-background bg-primary px-5 font-semibold inline-block'>
+            className='text-background bg-primary px-5 font-semibold '>
             Nge-Teh
           </motion.span>
 

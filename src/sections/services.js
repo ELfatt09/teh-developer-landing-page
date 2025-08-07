@@ -9,8 +9,9 @@ function Services() {
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
               <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5 mt-3' aria-hidden='true'></div>
-          </header>
-          <div className='w-full flex flex-col items-center justify-center mt-10' role='list'>
+      </header>
+          <div className='w-full max-w-5xl flex flex-col items-center justify-center mt-10 bg-white shadow-lg'>
+          <div className='w-full flex flex-col items-center justify-center ' role='list'>
               <Service number="01"
                   title="Pembuatan Landing Page"
                   price="350.000+"
@@ -35,7 +36,8 @@ function Services() {
                     "Dokumentasi penggunaan dan struktur database",
                     "Bisa request fitur khusus sesuai kebutuhan",
                   ]} />
-          </div>
+        </div>
+        </div>
       </section>
   )
 }
@@ -48,7 +50,7 @@ function Service(props) {
             onClick={() => setHover(!hover)}
             onHoverStart={() => setHover(true)}
             onHoverEnd={() => setHover(false)}
-            className={`transition duration-500 w-full h-min-20 h-full py-5 border-b border-text/40 ${hover ? 'bg-secondary/70' : 'hover:bg-secondary/70'} flex flex-col justify-center items-center group`}
+            className={`transition duration-500 w-full h-min-20 h-full py-5 first:border-b first:border-text/40 ${hover ? 'bg-secondary/70' : 'hover:bg-secondary/70'} flex flex-col justify-center items-center group`}
             role='listitem'
             aria-label={props.title}>
             <div className="w-full max-w-4xl flex flex-row justify-between items-center h-full">
