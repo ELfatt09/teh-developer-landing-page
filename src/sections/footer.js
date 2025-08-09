@@ -5,7 +5,7 @@ function Footer() {
         <>
         <div className='w-full bg-primary py-10 flex flex-col md:flex-row px-6 lg:px-16 items-center justify-between text-text space-y-10 md:space-y-0'>
             <div className='w-full md:w-1/2 px-4'>
-                <img src="/assets/images/white-banner.svg" alt="Logo Teh Developer" className='w-full max-w-xs mb-6' />
+                <img src="/assets/images/white-banner.svg" alt="Logo Teh Developer" className='w-full max-w-xs mb-6 md:mb-0' />
                 <div className='w-full flex flex-col text-lg space-y-4'>
                     <a className='text-background no-underline hover:underline' href="mailto:sevalinoelfata@gmail.com" aria-label="Email address">
                         <i className="fa-regular fa-envelope mr-3"></i>sevalinoelfata@gmail.com
@@ -39,3 +39,4 @@ function Footer() {
 }
 
 export default Footer
+

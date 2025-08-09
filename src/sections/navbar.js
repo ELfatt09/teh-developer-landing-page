@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
-    <nav className="bg-background shadow-lg fixed w-full top-0 flex flex-col z-20" role="navigation" aria-label="Main navigation">
+    <nav className="bg-background shadow-lg fixed z-30 w-full flex flex-col" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto flex w-full justify-between">
         <div className="flex items-center justify-between py-2">
             <a href="#beranda" className="text-3xl font-bold text-primary" aria-label="Logo" tabIndex={-1}>

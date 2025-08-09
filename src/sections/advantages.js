@@ -1,11 +1,11 @@
 const AdvantageItem = ({ number, title, imgSrc, description }) => (
-  <div className='group transition border text-text border-primary duration-300 w-full max-w-sm p-8 bg-white/50 hover:scale-105 hover:bg-primary hover:text-background min-h-[30rem] flex flex-col items-center justify-center mt-10'>
-    <div className='flex items-center justify-center w-16 h-16 bg-primary text-background text-3xl font-sans rounded-full'>
+  <div className='group transition border text-text border-primary duration-300 w-full max-w-sm px-4 bg-white/50 hover:scale-105 hover:bg-primary hover:text-background min-h-[30rem] flex flex-col items-center justify-center mt-10'>
+    <div className='flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-primary text-background text-xl md:text-2xl lg:text-3xl font-sans rounded-full'>
       {number}
     </div>
-    <h3 className='text-2xl font-sans mt-5 text-center'>{title}</h3>
+    <h3 className='text-lg md:text-xl lg:text-2xl font-sans mt-5 text-center'>{title}</h3>
     <img src={imgSrc} alt={title} className='w-1/2 mt-5' />
-    <p className='text-text/70 group-hover:text-background/70 text-sm md:text-md inline-block font-semibold text-center mt-5'>
+    <p className='text-text/70 group-hover:text-background/70 text-xs md:text-sm lg:text-md inline-block font-semibold text-center mt-5'>
       {description}
     </p>
   </div>
@@ -37,11 +37,11 @@ function Advantages() {
   ];
 
   return (
-    <section id='keunggulan' className='w-full min-h-screen flex flex-col items-center bg-background text-text mt-20 pt-10 pb-20'>
+      <section id='keunggulan' className='w-full mb-32 md:mb-40 lg:mb-48 flex flex-col items-center  bg-background text-text' aria-label='hero'>
       <div className='w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group'>
-        <h1 className='text-4xl md:text-5xl mt-10 font-sans leading-relaxed tracking-tighter text-center font-medium'>
+            <h2 id='advantages-heading' className='text-3xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
           Keunggulan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
-        </h1>
+        </h2>
         <div className='transition duration-1000 bg-text w-3 md:bg-text/0 group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5 mt-3'></div>
       </div>
       <div className='w-full flex flex-wrap items-start justify-center mt-10 gap-5 px-10'>

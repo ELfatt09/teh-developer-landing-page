@@ -20,11 +20,11 @@ function Hero() {
 
   return (
     <motion.section
-      id='beranda' className='mt-20 w-full min-h-screen flex flex-col items-center justify-center bg-background text-text' aria-label='hero'>
+      id='beranda' className='mt-20 w-full mb-32 md:mb-40 lg:mb-48 flex flex-col items-center  bg-background text-text' aria-label='hero'>
       <motion.div
         className='w-full max-w-5xl flex items-center justify-between px-8'>
         <motion.h1
-          className='text-4xl md:text-6xl mt-10 font-sans flex flex-wrap justify-center font-medium  md:leading-loose tracking-tighter space-x-2 text-center'>
+          className='text-4xl md:text-6xl mt-10 font-sans flex flex-wrap justify-center font-medium leading-normal  md:leading-loose tracking-tighter space-x-2 text-center'>
           {['Punya ', 'Website ', 'dan ', 'Aplikasi ', 'Sekarang ', 'Semudah '].map((word, index) => (
             <motion.span
               key={index}
@@ -37,23 +37,25 @@ function Hero() {
             </motion.span>
           ))}
           <motion.span
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 0.5 }}
+            
+            initial={{ width: 0, }}
+            whileInView={{ width: 'auto', }}
+            transition={{ delay: 1.7, duration: 0.5 }}
             viewport={{ once: true }}
-            className='text-background bg-primary px-5 font-semibold '>
-            Nge-Teh
+            className='text-background bg-primary font-semibold whitespace-nowrap overflow-hidden '>
+            <span className='px-5'>Nge-Teh</span>
+            
           </motion.span>
 
         </motion.h1>
       </motion.div>
 
-      <motion.div className='w-full text-center flex flex-col items-center mt-12'>
+      <motion.div className='w-full text-center flex flex-col items-center mt-6 md:mt-10 lg:mt-12'>
         <motion.p
           
           initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.7, duration: 1, ease: 'easeInOut' }}
+        transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
           
           className='px-5 text-text text-xs md:text-sm lg:text-base w-auto mx-auto md:w-1/2 mb-4'>
@@ -62,9 +64,9 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
+          transition={{ delay: 2.3, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
-          className='mt-10'
+          className='mt-5 md:mt-7 lg:mt-10'
         >
           <a
             href='#layanan'
@@ -80,7 +82,7 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.3, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
-        className='mt-24 h-auto overflow-hidden w-full mb-1o' role='img' aria-label='marquee'>
+        className='mt-12 md:mt-18 lg:mt-24 h-auto overflow-hidden w-full ' role='img' aria-label='marquee'>
           <Marquee images={pics} duration={40} />
         </motion.div>
     </motion.section>
