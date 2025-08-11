@@ -26,14 +26,20 @@ function Navbar() {
         </div>
                         
           </div>
-          {openMobileMenu && (
-            <div className="md:hidden w-full bg-white shadow-lg " role="menu">
+            <motion.div 
+              className="md:hidden w-full bg-background shadow-lg overflow-hidden" 
+          role="menu"
+          layout
+
+              animate={{ height: openMobileMenu ? 'auto' : 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
               <MobileNavButton href="#beranda">Beranda</MobileNavButton>
               <MobileNavButton href="#layanan">Layanan</MobileNavButton>
               <MobileNavButton href="#keunggulan">Keunggulan</MobileNavButton>
               <MobileNavButton href="#kontak">Kontak</MobileNavButton>
-            </div>
-          )}
+            </motion.div>
+
     </nav>
   )
 }

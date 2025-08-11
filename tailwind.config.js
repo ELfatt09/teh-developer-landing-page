@@ -19,6 +19,8 @@ module.exports = {
         secondary: '#cbcbcb',
         accent: '#6c3a10',
       
+        whatsapp: '#25D366',
+        instagram: '#C13584',
       },
     },
   }
