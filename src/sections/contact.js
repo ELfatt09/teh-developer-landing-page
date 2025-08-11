@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 
 function ContactCard({ icon, title, description, contactLink, contactText, contact, BGColorClass, FontColorClass }) {
     return (
@@ -24,13 +25,22 @@ function ContactCard({ icon, title, description, contactLink, contactText, conta
 function Contact() {
     return (
       <section id='kontak' className='mt-20 w-full mb-32 md:mb-40 lg:mb-48 flex flex-col items-center  bg-background text-text' aria-label='hero'>
-            <div className="w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group">
+                  <motion.header
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5 }} className="w-full max-w-5xl flex flex-col justify-center items-center px-8 leading-loose group">
                 <h2 id='contact-heading' className='text-3xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                     Kontak <span className="bg-primary text-background px-3 font-semibold">kami</span>
                 </h2>
                 <div className="transition duration-1000 bg-text w-3 md:bg-text/0 group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5"></div>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 w-full mt-10 px-5">
+            </motion.header>
+            <motion.div
+          initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="flex flex-wrap items-center justify-center gap-4 w-full mt-10 px-5">
                 <ContactCard
                     icon="fa-brands fa-whatsapp"
                     title="WhatsApp"
@@ -61,7 +71,7 @@ function Contact() {
                     BGColorClass={"bg-instagram"}
                     FontColorClass={"text-instagram"}
                 />
-            </div>
+            </motion.div>
         </section>
     );
 }

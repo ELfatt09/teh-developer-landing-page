@@ -4,14 +4,24 @@ import { motion } from 'motion/react'
 function Services() {
   return (
       <section id='layanan' className='w-full mb-32 md:mb-40 lg:mb-48 flex flex-col items-center  bg-background text-text' aria-label='hero'>
-          <header className='w-full max-w-5xl flex flex-col items-center px-8 leading-loose group'>
+      <motion.header
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5 }}
+        className='w-full max-w-5xl flex flex-col items-center px-8 leading-loose group'>
             <h2 id='services-heading' className='text-3xl md:text-5xl mt-10 font-sans leading-relaxed text-center  tracking-tighter font-medium'>
                 Layanan <span className='bg-primary text-background px-3 font-semibold'>kami</span>
               </h2>
               <div className='transition duration-1000 bg-text w-3 md:bg-text/0  group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5 mt-3' aria-hidden='true'></div>
-      </header>
-          <div className='w-full max-w-5xl flex flex-col items-center justify-center mt-10 bg-white shadow-lg'>
-          <div className='w-full flex flex-col items-center justify-center ' role='list'>
+      </motion.header>
+          <motion.div
+          initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, delay: 0.3 }}
+        className='w-full max-w-5xl flex flex-col items-center justify-center mt-10 bg-white shadow-lg'>
+            <div className='w-full flex flex-col items-center justify-center ' role='list'>
               <Service number="01"
                   title="Pembuatan Landing Page"
                   price="350.000+"
@@ -31,13 +41,13 @@ function Services() {
                     "Dibangun dengan Laravel — framework PHP modern dan powerful",
                     "Struktur kode rapi, mudah dikembangkan & dipelihara",
                     "Sistem autentikasi aman (login, register, role management, dsb)",
-                    "Gratis Revisi kecil 2x dan besar 1x",
                     "Bantuan deployment ke server & setup hosting",
                     "Dokumentasi penggunaan dan struktur database",
                     "Bisa request fitur khusus sesuai kebutuhan",
                   ]} />
-        </div>
-        </div>
+
+      </div>
+              </motion.div>
       </section>
   )
 }
