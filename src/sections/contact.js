@@ -36,11 +36,11 @@ function Contact() {
                 <div className="transition duration-1000 bg-text w-3 md:bg-text/0 group-hover:bg-text/100 scale-x-[3000%] md:scale-x-0 group-hover:scale-x-[5000%] max-w-lg h-0.5"></div>
             </motion.header>
             <motion.div
-          initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1, delay: 0.3 }}
-                className="flex flex-wrap items-center justify-center gap-4 w-full mt-10 px-5">
+                className="flex flex-col items-center justify-center gap-4 w-full mt-10 px-5">
                 <ContactCard
                     icon="fa-brands fa-whatsapp"
                     title="WhatsApp"
@@ -51,6 +51,13 @@ function Contact() {
                     BGColorClass={"bg-whatsapp"}
                     FontColorClass={"text-whatsapp"}
                 />
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1, delay: 0.6 }}
+                className="flex flex-col items-center justify-center gap-4 w-full mt-10 px-5">
                 <ContactCard
                     icon="fa-solid fa-envelope"
                     title="Email"
@@ -61,6 +68,13 @@ function Contact() {
                     BGColorClass={"bg-blue-500"}
                     FontColorClass={"text-blue-500"}
                 />
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1, delay: 0.9 }}
+                className="flex flex-col items-center justify-center gap-4 w-full mt-10 px-5">
                 <ContactCard
                     icon="fa-brands fa-instagram"
                     title="Instagram"
@@ -77,4 +91,6 @@ function Contact() {
 }
 
 export default Contact;
+
+
 

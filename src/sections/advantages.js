@@ -5,7 +5,7 @@ const AdvantageItem = ({ number, title, imgSrc, description }) => (
     initial={{y: -25}}
     animate={{ y: 25}}
     transition={{ delay: 2, duration: Math.random() * 6 + 2, repeat: Infinity, repeatType: 'reverse',  ease: 'easeInOut' }}
-    className='group transition border text-text border-primary duration-300 w-full max-w-sm px-4 bg-white/50 hover:scale-105 hover:bg-primary hover:text-background min-h-[30rem] flex flex-col items-center justify-center mt-10'>
+    className='group transition border text-text shadow-2xl duration-300 w-full max-w-sm px-4 bg-white/50 hover:scale-105 hover:bg-primary hover:text-background min-h-[30rem] flex flex-col items-center justify-center mt-10'>
     <div className='flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-primary text-background text-xl md:text-2xl lg:text-3xl font-sans rounded-full'>
       {number}
     </div>
