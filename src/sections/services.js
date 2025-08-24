@@ -25,25 +25,23 @@ function Services() {
               <Service number="01"
                   title="Pembuatan Landing Page"
                   price="350.000+"
-                  description="layanan Pembuatan landing page profesional untuk usaha Anda—desain menarik, responsif, dan siap meningkatkan penjualan serta kepercayaan pelanggan."
+                  description="Bikin usaha kamu makin dipercaya pelanggan dengan landing page profesional. Desain menarik, responsif (bisa dibuka di HP/laptop), dan siap bantu naikin penjualan."
                   list={[ 
-                "Desain modern dan profesional yang sesuai dengan identitas brand Anda",
-                "Optimasi SEO untuk meningkatkan peringkat di mesin pencari",
-                "Gratis Revisi kecil 2x dan besar 1x",
-                "Bantuan pendaftaran Hosting dan Domain",
-                "Bantuan Deployment",
+                "Desain modern sesuai brand usaha kamu",
+                "Lebih mudah ditemukan di Google (SEO)",
+                "Gratis revisi (2x kecil, 1x besar)",
+                "Dibantu sampai website benar-benar online (domain + hosting + deployment)",
                   ]} />
               <Service number="02"
                   title="Pembuatan Aplikasi Web"
                   price="1.000.000+"
-                  description="Layanan pengembangan aplikasi web berbasis Laravel, dirancang khusus untuk memenuhi kebutuhan bisnis Anda—dengan sistem yang aman, cepat, dan mudah dikembangkan."
+                  description="Butuh sistem khusus buat usaha? Kami bisa bikin aplikasi web sesuai kebutuhan bisnis kamu, aman dan mudah dipakai."
                   list={[ 
-                    "Dibangun dengan Laravel — framework PHP modern dan powerful",
-                    "Struktur kode rapi, mudah dikembangkan & dipelihara",
-                    "Sistem autentikasi aman (login, register, role management, dsb)",
-                    "Bantuan deployment ke server & setup hosting",
-                    "Dokumentasi penggunaan dan struktur database",
-                    "Bisa request fitur khusus sesuai kebutuhan",
+                    "Kode rapi, gampang dikembangkan lagi di masa depan",
+                    "Sistem login & manajemen pengguna yang aman",
+                    "Dibantu sampai aplikasi jalan di server",
+                    "Dokumentasi lengkap & panduan penggunaan",
+                    "Bisa request fitur sesuai kebutuhan",
                   ]} />
 
       </div>

@@ -10,6 +10,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* di index.css juga, di bawah @tailwind base */
 body {
   margin: 0;
