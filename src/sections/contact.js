@@ -81,8 +81,8 @@ function Contact() {
                     icon="fa-brands fa-instagram"
                     title="Instagram"
                     description="Terhubung melalui Instagram untuk pertanyaan layanan, portofolio terbaru, dan update informasi."
-                    contactLink="https://instagram.com/tehdancode"
-                    contact="@tehdancode"
+                    contactLink="https://www.instagram.com/official.tehdeveloper/"
+                    contact="@official.tehdeveloper"
                     contactText="Lihat di Instagram"
                     BGColorClass={"bg-instagram"}
                     FontColorClass={"text-instagram"}
